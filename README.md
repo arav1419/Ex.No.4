@@ -1,36 +1,33 @@
-# Ex.No.4-EXP 4 Generate the Prompt and evaluate that for following prompt patterns - Zero-shot Prompting.•	Few-shot Prompting - Chain of Thought -	Persona Pattern - Reverse Prompting - Graph Prompting - Active Prompting
+# Ex.No.4-EXP 4 Generate the Prompt and evaluate that for following prompt patterns - Zero-shot Prompting.• Few-shot Prompting - Chain of Thought - Persona Pattern - Reverse Prompting - Graph Prompting - Active Prompting
 
-### DATE:  2/9/26  
+### DATE: 02.09.2026
 
 ### REGISTER NUMBER : 212224060023
 
-### Aim: To write the prompt for the following prompt types and compare that with different AI tools and evaluate that using any one evaluation method (Ex. 
-Rubrics). Zero-shot Prompting.•	Few-shot Prompting - Chain of Thought -	Persona Pattern - Reverse Prompting - Graph Prompting - Active Prompting 
+### Aim: To write the prompt for the following prompt types and compare that with different AI tools and evaluate that using any one evaluation method (Ex. Rubrics). Zero-shot Prompting.• Few-shot Prompting - Chain of Thought - Persona Pattern - Reverse Prompting - Graph Prompting - Active Prompting
 
+# Use Case :
 
-# Use Case : 
-
-## Drone Navigation using AI and Computer Vision
+## Smart Manufacturing Automation using IoT and Embedded Controllers
 
 ### Scenario
 
-Autonomous drones are increasingly used for surveillance, agriculture, disaster management, and package delivery. AI enables drones to detect obstacles, plan safe routes, and reach destinations efficiently using sensors, GPS, and computer vision.
+The manufacturing industry is looking to reduce manual monitoring and increase efficiency through automation. IoT devices and embedded controllers are used to automate equipment, monitor performance in real time, and enable predictive maintenance. The goal is to streamline production, minimize downtime, and enhance energy efficiency.
 
 ### Target Audience
 
-- AI engineers
-- Robotics students
-- Drone developers
-- Researchers
-- Automation companies
+- Manufacturing companies (automotive, electronics, food processing)
+- Industrial automation engineers
+- Plant maintenance teams
+- IoT system developers
+- Production managers
 
 ### Main Objectives
 
-- Improve navigation accuracy.
-- Avoid obstacles automatically.
-- Minimize travel time.
-- Optimize battery consumption.
-- Ensure safe autonomous flight.
+- Improve production efficiency by 30%.
+- Minimize machinery downtime with predictive maintenance.
+- Enable real-time monitoring and remote control of manufacturing systems.
+- Reduce energy consumption by optimizing processes.
 
 ---
 
@@ -39,12 +36,11 @@ Autonomous drones are increasingly used for surveillance, agriculture, disaster 
 ## 1. Zero-shot Prompting
 
 ### Prompt
-
-> Explain how an AI-powered drone navigates autonomously while avoiding obstacles.
+> Explain how IoT and embedded controllers can be used to enable predictive maintenance in a manufacturing plant.
 
 ### Expected AI Response
 
-The AI drone uses GPS, cameras, LiDAR, and sensors to identify its surroundings. It processes real-time data using machine learning algorithms to detect obstacles, plan the safest route, and adjust its flight path automatically until it reaches the destination.
+IoT sensors attached to machinery collect real-time data such as vibration, temperature, and pressure. Embedded controllers process this data locally and transmit it to a central system, where algorithms detect early warning signs of failure. This allows maintenance to be scheduled proactively, reducing unplanned downtime.
 
 ### Observation
 
@@ -58,21 +54,21 @@ The model generates a complete response without being provided with any examples
 
 **Example 1**
 
-**Input:** Detect a tree in front of the drone.  
-**Output:** Change direction to avoid collision.
+**Input:** Vibration levels exceed normal range on Machine A.
+**Output:** Flag Machine A for inspection and schedule maintenance within 24 hours.
 
 **Example 2**
 
-**Input:** Low battery detected.  
-**Output:** Return to the home location automatically.
+**Input:** Motor temperature rises above safe threshold.
+**Output:** Automatically reduce load and alert the maintenance team.
 
 **Now Answer**
 
-**Input:** Strong wind detected during flight.
+**Input:** Sudden pressure drop detected in the hydraulic system.
 
 ### Expected AI Response
 
-Reduce speed, stabilize flight using onboard sensors, and if conditions become unsafe, return safely to the launch point.
+Trigger an immediate alert to the maintenance team, temporarily reduce system load to prevent damage, and schedule an urgent inspection of the hydraulic system.
 
 ### Observation
 
@@ -83,19 +79,15 @@ Providing examples helps the AI understand the expected response format and impr
 ## 3. Chain of Thought Prompting
 
 ### Prompt
-
-> A drone must deliver medicine to a village. Explain step by step how it plans the safest route while avoiding obstacles and minimizing battery usage.
+> A manufacturing plant wants to reduce equipment downtime using IoT. Think step by step: identify data to collect, explain how it is transmitted, explain how failures are predicted, describe the maintenance action taken, and summarize the benefit.
 
 ### Expected AI Response
 
-1. Receive destination coordinates.
-2. Collect GPS and sensor information.
-3. Detect nearby obstacles.
-4. Calculate multiple possible paths.
-5. Select the shortest safe route.
-6. Monitor battery continuously.
-7. Adjust the route if new obstacles appear.
-8. Reach the destination safely.
+1. Sensors collect data such as temperature, vibration, and pressure from machines.
+2. Embedded controllers transmit this data in real time to a central monitoring system via IoT networks.
+3. Machine learning models analyze the data for abnormal patterns indicating potential failure.
+4. When risk is detected, the system alerts maintenance staff to service the specific machine before failure occurs.
+5. This reduces unplanned downtime, lowers repair costs, and improves overall production efficiency.
 
 ### Observation
 
@@ -106,28 +98,26 @@ The response follows a logical sequence, making the reasoning process easier to 
 ## 4. Persona Pattern
 
 ### Prompt
-
-> You are an experienced drone navigation engineer. Explain how AI improves autonomous drone navigation.
+> You are an experienced IoT systems engineer at a manufacturing plant. Explain to plant management how predictive maintenance will benefit operations.
 
 ### Expected AI Response
 
-As a drone engineer, I use AI algorithms to combine GPS, camera, and sensor data. The system predicts obstacles, selects efficient flight paths, reduces energy consumption, and continuously adapts to environmental changes for safe navigation.
+As your IoT systems engineer, our new predictive maintenance setup uses sensors on critical machines to monitor performance continuously. Instead of following a fixed maintenance schedule or waiting for breakdowns, we service equipment exactly when needed. This cuts unplanned downtime, reduces maintenance costs, and helps us reach our efficiency targets.
 
 ### Observation
 
-The response reflects the perspective and expertise of a drone navigation professional.
+The response reflects the perspective and expertise of an industrial automation professional.
 
 ---
 
 ## 5. Reverse Prompting
 
 ### Prompt
-
-> A drone successfully avoided birds, reached its destination, and returned safely with minimum battery consumption. What prompt could have generated this response?
+> A manufacturing plant reduced downtime by 40%, cut energy costs, and avoided three major equipment failures using an automated monitoring system. What prompt could have generated this outcome?
 
 ### Expected AI Response
 
-Design an AI-based drone navigation system that avoids moving obstacles such as birds, optimizes battery usage, selects the safest route, and returns safely after completing its mission.
+Design an IoT-based predictive maintenance and energy optimization system for a manufacturing plant that monitors equipment health in real time, predicts failures before they occur, and automatically adjusts operations to reduce energy consumption.
 
 ### Observation
 
@@ -138,29 +128,26 @@ The AI infers the original prompt from the desired output.
 ## 6. Graph Prompting
 
 ### Prompt
-
-> Represent the workflow of an AI-powered drone navigation system as a flow diagram.
+> Represent the workflow of an IoT-based predictive maintenance system as a flow diagram.
 
 ### Expected AI Response
 
-```text
+```
 Start
    ↓
-Receive Destination
+Sensor Data Collection
    ↓
-Collect GPS & Sensor Data
+Data Transmission (Embedded Controllers)
    ↓
-Detect Obstacles
+Analysis & Failure Prediction
    ↓
-Plan Safe Route
+Alert Generation
    ↓
-Navigate
+Maintenance Action
    ↓
-Monitor Battery
+Reduced Downtime
    ↓
-Reach Destination
-   ↓
-Mission Complete
+Process Complete
 ```
 
 ### Observation
@@ -172,19 +159,18 @@ Graph prompting organizes the information visually, making workflows easier to u
 ## 7. Active Prompting
 
 ### Prompt
-
-> Analyze whether the drone should continue flying if heavy rain begins during navigation. If additional information is required, ask follow-up questions before giving the final recommendation.
+> Analyze whether a machine showing early vibration warnings should be shut down immediately. If additional information is required, ask follow-up questions before giving the final recommendation.
 
 ### Expected AI Response
 
 The AI first asks questions such as:
 
-- What is the drone's waterproof rating?
-- How much battery remains?
-- How severe is the rainfall?
-- How far is the destination?
+- How severe is the vibration compared to the safety threshold?
+- Is the machine part of a critical production line?
+- Is a replacement or backup machine available?
+- How long until the next scheduled maintenance window?
 
-After receiving the information, it recommends either continuing the mission or returning safely based on the risk assessment.
+After receiving the information, it recommends either continuing operation with close monitoring or shutting down for immediate inspection based on the risk level.
 
 ### Observation
 
@@ -197,11 +183,12 @@ The AI actively gathers missing information before making a decision, improving 
 ## 1. Zero-shot Prompting
 
 ### Prompt
-Explain how an AI-powered drone navigates autonomously while avoiding obstacles.
+
+Explain how IoT and embedded controllers can be used to enable predictive maintenance in a manufacturing plant.
 
 ### AI Output
 
-An AI-powered drone uses GPS, cameras, LiDAR, and ultrasonic sensors to understand its surroundings. It continuously collects real-time environmental data and processes it using AI algorithms. The system detects obstacles such as trees, buildings, and power lines, then calculates the safest flight path. During the flight, the drone automatically changes its direction or altitude whenever a new obstacle is detected, ensuring safe and efficient navigation until it reaches its destination.
+IoT sensors mounted on machinery continuously capture parameters such as temperature, vibration, and pressure. Embedded controllers process this data at the edge and relay it to a centralized monitoring system. Predictive algorithms analyze the incoming data streams to identify early signs of wear or malfunction, enabling maintenance teams to intervene before a failure occurs, thereby minimizing unplanned downtime and extending equipment lifespan.
 
 ---
 
@@ -211,23 +198,23 @@ An AI-powered drone uses GPS, cameras, LiDAR, and ultrasonic sensors to understa
 
 Example 1
 
-Input: Detect a tree in front of the drone.
+Input: Vibration levels exceed normal range on Machine A.
 
-Output: Turn right by 30° and continue flying.
+Output: Flag Machine A for inspection and schedule maintenance within 24 hours.
 
 Example 2
 
-Input: Battery level drops below 20%.
+Input: Motor temperature rises above safe threshold.
 
-Output: Return to the home location automatically.
+Output: Automatically reduce load and alert the maintenance team.
 
 Now answer:
 
-Input: Heavy fog detected during flight.
+Input: Sudden pressure drop detected in the hydraulic system.
 
 ### AI Output
 
-Output: Reduce flight speed, activate obstacle avoidance sensors, switch to safe navigation mode, and return to the home location if visibility becomes critically low.
+Output: Immediately alert the maintenance team, reduce system load to prevent further stress, and schedule an urgent inspection of the hydraulic system to identify the cause of the pressure drop.
 
 ---
 
@@ -235,29 +222,23 @@ Output: Reduce flight speed, activate obstacle avoidance sensors, switch to safe
 
 ### Prompt
 
-A drone must deliver medicine to a remote village. Explain step by step how it plans the safest route while avoiding obstacles and minimizing battery usage.
+A manufacturing plant wants to reduce equipment downtime using IoT. Explain step by step how the process works.
 
 ### AI Output
 
-Step 1: Receive the destination coordinates.
+Step 1: Sensors on machines continuously collect operational data (temperature, vibration, pressure).
 
-Step 2: Load the digital map of the area.
+Step 2: Embedded controllers transmit this data in real time to a central or cloud-based monitoring system.
 
-Step 3: Collect GPS, camera, and LiDAR sensor data.
+Step 3: AI algorithms analyze the data to detect deviations from normal operating patterns.
 
-Step 4: Detect obstacles such as buildings, trees, birds, and power lines.
+Step 4: When a potential failure is predicted, the system generates an alert for the maintenance team.
 
-Step 5: Generate multiple possible routes.
+Step 5: Maintenance is scheduled proactively for the specific machine, avoiding unplanned stoppages.
 
-Step 6: Compare routes based on safety, travel distance, and battery consumption.
+Step 6: Historical data is used to continuously refine failure-prediction accuracy over time.
 
-Step 7: Select the optimal route.
-
-Step 8: Monitor weather conditions continuously.
-
-Step 9: Modify the flight path if new obstacles appear.
-
-Step 10: Reach the destination safely and return if required.
+Step 7: The plant benefits from lower downtime, reduced repair costs, and improved overall efficiency.
 
 ---
 
@@ -265,11 +246,11 @@ Step 10: Reach the destination safely and return if required.
 
 ### Prompt
 
-You are an experienced drone navigation engineer. Explain how AI improves autonomous drone navigation.
+You are an experienced IoT systems engineer at a manufacturing plant. Explain to plant management how predictive maintenance will benefit operations.
 
 ### AI Output
 
-As a drone navigation engineer, I rely on AI to improve both safety and efficiency. The AI system combines information from GPS, cameras, LiDAR, and onboard sensors to create a real-time understanding of the environment. It predicts possible obstacles before they become dangerous, calculates the safest route, and continuously updates the flight path. This significantly reduces human intervention, improves navigation accuracy, and extends battery life during autonomous missions.
+As your IoT systems engineer, I want to highlight that our predictive maintenance setup uses sensors on critical machines to monitor real-time performance. Rather than relying on fixed schedules or reacting after a breakdown, we can now service equipment exactly when it's needed. This approach significantly reduces unplanned downtime, lowers maintenance costs, and helps us meet our production efficiency targets while keeping the plant running smoothly.
 
 ---
 
@@ -277,11 +258,11 @@ As a drone navigation engineer, I rely on AI to improve both safety and efficien
 
 ### Prompt
 
-A drone successfully avoided birds, reached its destination safely, minimized battery consumption, and returned to its launch point. Generate the prompt that could have produced this response.
+A manufacturing plant reduced downtime by 40%, cut energy costs, and avoided three major equipment failures using an automated monitoring system. Generate the prompt that could have produced this outcome.
 
 ### AI Output
 
-Design an AI-powered drone navigation system that uses GPS, computer vision, and obstacle detection to safely avoid moving obstacles such as birds, optimize battery usage, calculate the shortest safe route, complete the delivery mission, and return automatically to the launch point.
+Design an IoT-based predictive maintenance and energy optimization system for a manufacturing plant that continuously monitors equipment health, predicts failures before they occur, automatically adjusts operational parameters to save energy, and minimizes unplanned downtime across the production line.
 
 ---
 
@@ -289,42 +270,36 @@ Design an AI-powered drone navigation system that uses GPS, computer vision, and
 
 ### Prompt
 
-Represent the workflow of an AI-powered drone navigation system as a flow diagram.
+Represent the workflow of an IoT-based predictive maintenance system as a flow diagram.
 
 ### AI Output
 
-```text
+```
 Start
    │
    ▼
-Receive Destination
+Sensor Data Collection
    │
    ▼
-Collect GPS & Sensor Data
+Data Transmission (Embedded Controllers)
    │
    ▼
-Detect Obstacles
+Data Analysis & Anomaly Detection
    │
    ▼
-Analyze Environment
+Failure Prediction
    │
    ▼
-Plan Safe Route
+Alert Generation
    │
    ▼
-Navigate Drone
+Maintenance Action Scheduled
    │
    ▼
-Monitor Battery & Weather
+Reduced Downtime & Energy Savings
    │
    ▼
-Update Route if Needed
-   │
-   ▼
-Reach Destination
-   │
-   ▼
-Mission Complete
+Process Complete
 ```
 
 ---
@@ -333,34 +308,36 @@ Mission Complete
 
 ### Prompt
 
-Determine whether the drone should continue flying if heavy rain starts during navigation. Ask for any missing information before making a recommendation.
+Analyze whether a machine showing early vibration warnings should be shut down immediately. Ask for any missing information before making a recommendation.
 
 ### AI Output
 
 Before making a decision, I need the following information:
 
-1. What is the drone's battery level?
-2. Is the drone waterproof?
-3. How heavy is the rainfall?
-4. How far is the destination?
-5. Is there a safe landing location nearby?
+1. How severe is the vibration compared to the safety threshold?
+2. Is this machine part of a critical production line?
+3. Is a backup or replacement machine available?
+4. How long until the next scheduled maintenance window?
+5. What is the estimated cost of an unplanned failure versus a planned shutdown?
 
 Based on the answers:
 
-- If the drone is waterproof, battery level is above 60%, and rainfall is light, continue the mission while reducing speed.
-- If rainfall is heavy or battery is low, return to the launch point or land safely at the nearest secure location.
+- If vibration is within a moderate range and a backup is available, continue operation under close monitoring.
+- If vibration is severe or no backup exists, shut down immediately for inspection to prevent a costly failure.
+
+---
 
 # Comparison with Different AI Tools
 
-| Prompt Type | ChatGPT | Google Gemini | Microsoft Copilot |
-|-------------|----------|---------------|-------------------|
-| Zero-shot Prompting | Detailed and accurate | Clear explanation | Moderate detail |
-| Few-shot Prompting | Learns examples effectively | Good consistency | Adequate |
-| Chain of Thought | Well-structured reasoning | Logical explanation | Basic reasoning |
-| Persona Pattern | Natural expert response | Professional style | Brief |
-| Reverse Prompting | Highly accurate prompt generation | Good | Moderate |
-| Graph Prompting | Clear workflow representation | Good flow | Simple diagram |
-| Active Prompting | Excellent follow-up questioning | Good clarification | Limited questions |
+| Prompt Type         | ChatGPT                            | Google Gemini        | Microsoft Copilot   |
+| -------------------- | ----------------------------------- | ---------------------- | ---------------------- |
+| Zero-shot Prompting  | Detailed and accurate               | Clear explanation      | Moderate detail        |
+| Few-shot Prompting   | Learns examples effectively         | Good consistency       | Adequate                |
+| Chain of Thought     | Well-structured reasoning           | Logical explanation    | Basic reasoning         |
+| Persona Pattern      | Natural expert response             | Professional style     | Brief                   |
+| Reverse Prompting    | Highly accurate prompt generation   | Good                   | Moderate                |
+| Graph Prompting      | Clear workflow representation       | Good flow               | Simple diagram          |
+| Active Prompting     | Excellent follow-up questioning     | Good clarification     | Limited questions       |
 
 ---
 
@@ -368,21 +345,21 @@ Based on the answers:
 
 ## Evaluation Criteria
 
-| Criteria | Excellent (5) | Good (4) | Average (3) |
-|----------|---------------|----------|-------------|
-| Reasoning | Logical and complete | Mostly logical | Basic reasoning |
-| Correctness | Highly accurate | Minor errors | Some inaccuracies |
-| Token Usage | Efficient and concise | Moderate | Slightly verbose |
+| Criteria    | Excellent (5)          | Good (4)        | Average (3)        |
+| ----------- | ----------------------- | ----------------- | --------------------- |
+| Reasoning   | Logical and complete     | Mostly logical    | Basic reasoning       |
+| Correctness | Highly accurate          | Minor errors      | Some inaccuracies     |
+| Token Usage | Efficient and concise    | Moderate          | Slightly verbose       |
 
 ---
 
 ## Rubrics Scores
 
-| AI Tool | Reasoning | Correctness | Token Usage | Total / 15 |
-|----------|-----------|-------------|-------------|------------|
-| ChatGPT | 5 | 5 | 5 | **15** |
-| Google Gemini | 4 | 5 | 4 | **13** |
-| Microsoft Copilot | 4 | 4 | 4 | **12** |
+| AI Tool            | Reasoning | Correctness | Token Usage | Total / 15 |
+| -------------------- | ----------- | ------------- | -------------- | ------------ |
+| ChatGPT             | 5         | 5           | 5            | **15**       |
+| Google Gemini       | 4         | 5           | 4            | **13**       |
+| Microsoft Copilot   | 4         | 4           | 4            | **12**       |
 
 ---
 
@@ -396,10 +373,10 @@ Based on the answers:
 
 # Conclusion
 
-This experiment successfully demonstrated the use of advanced prompting techniques for an AI-based Drone Navigation System. Zero-shot prompting generated responses without examples, few-shot prompting improved consistency using sample inputs, chain-of-thought prompting enhanced logical reasoning, persona prompting produced expert-level explanations, reverse prompting inferred the original query from the output, graph prompting presented workflow visually, and active prompting improved decision-making through follow-up questions. Based on the evaluation using reasoning, correctness, and token usage, ChatGPT achieved the highest overall score due to its clear reasoning, high accuracy, and efficient response generation.
+This experiment successfully demonstrated the use of advanced prompting techniques for an IoT-based Smart Manufacturing predictive maintenance system. Zero-shot prompting generated responses without examples, few-shot prompting improved consistency using sample inputs, chain-of-thought prompting enhanced logical reasoning, persona prompting produced expert-level explanations, reverse prompting inferred the original query from the output, graph prompting presented the workflow visually, and active prompting improved decision-making through follow-up questions. Based on the evaluation using reasoning, correctness, and token usage, ChatGPT achieved the highest overall score due to its clear reasoning, high accuracy, and efficient response generation.
 
 ---
 
 # Result
 
-Thus, the advanced prompting techniques were implemented successfully, compared across different AI tools, and evaluated using a rubric-based method. The Drone Navigation case study demonstrated that selecting the appropriate prompting technique significantly improves AI reasoning, correctness, and response efficiency for engineering applications. Thus, the experiment successfully achieved its objective of understanding and evaluating advanced prompt engineering techniques for real-world engineering scenarios.
+Thus, the advanced prompting techniques were implemented successfully, compared across different AI tools, and evaluated using a rubric-based method. The Smart Manufacturing predictive maintenance case study demonstrated that selecting the appropriate prompting technique significantly improves AI reasoning, correctness, and response efficiency for industrial automation applications. Thus, the experiment successfully achieved its objective of understanding and evaluating advanced prompt engineering techniques for real-world engineering scenarios.
